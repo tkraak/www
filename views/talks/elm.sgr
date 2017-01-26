@@ -1,0 +1,5 @@
+extends(src='../layouts/slide.sgr')
+  block(name='seo')
+    title ELM Goes Static || {static is} the New Dynamic Meetup Talk
+    meta(name='description' content="ELM's journey from Movable Type to Jekyll and over to Roots.")
+  block(name='content')

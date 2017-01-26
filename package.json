@@ -1,0 +1,35 @@
+{
+  "name": "tomkraak.com",
+  "description": "My personal website.",
+  "version": "0.1.0",
+  "author": "Tom Kraak",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/tkraak/www/issues",
+  "dependencies": {
+    "babel-preset-latest": "^6.16.0",
+    "hard-source-webpack-plugin": "0.2.2",
+    "reshape-standard": "^0.4.2",
+    "spike-css-standards": "^0.1.3",
+    "spike-page-id": "^0.1.0",
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "rimraf": "^2.5.4",
+    "snazzy": "^5.0.0",
+    "spike-core": "^0.13.0",
+    "standard": "^8.6.0"
+  },
+  "homepage": "https://tomkraak.com",
+  "main": "app.js",
+  "private": true,
+  "repository": "https://github.com/tkraak/www",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava"
+  }
+}

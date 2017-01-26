@@ -1,0 +1,194 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+body {
+  font-family: 'Droid Serif';
+}
+
+.remark-container {
+  background: #F9F5F0;
+}
+
+
+h1, h2, h3 {
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+h1 {
+  color: #F4991A;
+}
+
+h2, h3 {
+  color: #321313;
+}
+
+.remark-code,
+.remark-inline-code {
+  font-family: 'Ubuntu Mono';
+  font-size: 1.2em; }
+
+blockquote {
+  background: transparent;
+  border-left: 5px solid #F2EAD3;
+  color: #321313;
+  margin: 1.5em 1em;
+  padding: .5em 1em;
+  quotes: "“" "”"; }
+  blockquote:before {
+    color: #F2EAD3;
+    content: open-quote;
+    font-size: 4em;
+    line-height: .1em;
+    margin-right: .1em;
+    vertical-align: -.2em; }
+  blockquote:after {
+    color: #F2EAD3;
+    content: close-quote;
+    font-size: 4em;
+    line-height: .1em;
+    margin-left: .1em;
+    vertical-align: -.3em; }
+  blockquote :first-child {
+    display: inline; }
+  blockquote p {
+    font-size: 2em; }
+  blockquote span {
+    color: crimson; }
+
+cite {
+  margin-left: 3em; }
+
+#slide-about-elm {
+  background: #f33;
+}
+
+#slide-about-elm img {
+  height: 10em;
+  width: 10em;
+  margin-left: 1em;
+}
+
+#slide-about-elm blockquote {
+  border-left-color: white;
+  color: white;
+}
+#slide-about-elm blockquote:before,
+#slide-about-elm blockquote:after {
+  color: white;
+}
+
+#slide-roots {
+  background: #e9b27b linear-gradient(180deg, #eed584, #e9b27b) repeat-x;
+}
+
+#slide-roots h1 {
+  color: #4b3c28;
+}
+
+#slide-roots img {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  width: 200%;
+  margin: -50% 0 0 -50%;
+  animation: rotate 180s linear infinite;
+}
+
+#slide-css-stylesheet-hierarchy .remark-inline-code {
+  color: crimson; }
+
+#slide-css-browser,
+#slide-css-rule,
+#slide-css-selector-declaration,
+#slide-css-property-value {
+  background-color: #233135; }
+
+.red-text {
+  color: crimson; }
+
+.pink-bg {
+  background-color: pink; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+/*******************************************************************************
+ SVG logos
+*******************************************************************************/
+#slide-version-control-with-git #version-control-with:after {
+  content: url(../slides/unit/assets/git.svg);
+  display: inline-block;
+  margin-left: .5em;
+  vertical-align: middle; }
+
+#slide-unit-3 img[src*="svg"] {
+  height: 60vmin; }
+
+#slide-unit-4 img[src*="svg"] {
+  height: 50vmin; }
+
+/*******************************************************************************
+ adjust slide background colors
+*******************************************************************************/
+#slide-html-tags {
+  background-color: #37282f; }
+  #slide-html-tags .remark-slide-number {
+    color: white; }
+
+/*******************************************************************************
+ customaize a few slides
+*******************************************************************************/
+#slide-js-fn-values ul,
+#slide-js-fn-first-class ul {
+  line-height: 2em; }
+#slide-js-fn-values .remark-inline-code,
+#slide-js-fn-first-class .remark-inline-code {
+  background: #f0f0f0;
+  padding: 5px;
+  border-radius: 3px; }
+
+/*******************************************************************************
+ bring a few slide headlines into view
+*******************************************************************************/
+#slide-git-feature-branches #working-in-different-contexts {
+  position: relative;
+  left: -270px;
+  top: -180px; }
+
+#slide-git-merge-fast-forward-before img[src*="forward-before"] {
+  position: relative;
+  top: -150px; }
+
+#slide-git-merge-fast-forward-after img[src*="forward-after"] {
+  position: relative;
+  top: -900px; }
+
+/*******************************************************************************
+ Flexbox experiments
+*******************************************************************************/
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
+.flex-item {
+  width: 200px;
+  line-height: 50px;
+  color: tomato;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center; }

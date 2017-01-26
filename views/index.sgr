@@ -1,0 +1,3 @@
+extends(src='layouts/slide.sgr')
+  block(name='content')
+
